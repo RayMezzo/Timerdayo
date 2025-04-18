@@ -234,6 +234,6 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(3001, () => {
+server.listen(process.env.PORT, () => {
   console.log('Socket.IO server running on http://localhost:3001');
 });
